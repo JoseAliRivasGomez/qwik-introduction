@@ -25,4 +25,4 @@ This app has a minimal [Express server](https://expressjs.com/) implementation. 
 npm run serve
 ```
 
-Then visit [http://localhost:8080/](http://localhost:8080/)
+Then visit [http://localhost:8080/](http://localhost:8080/) or (http://qwik-pokeapp21.up.railway.app)

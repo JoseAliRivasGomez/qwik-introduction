@@ -9,7 +9,7 @@ export const useLoginUserAction = routeAction$(( data, { cookie, redirect } ) =>
     const { email, password } = data;    
     
     // TypeOrm Prisma, 
-    if ( email === 'fernando@google.com' && password === '123456'  ) {
+    if ( email === 'jose@gmail.com' && password === '123456'  ) {
         cookie.set('jwt','esto_es_mi_jwt', { secure: true, path: '/' });
         redirect(302, '/');
         return {
@@ -40,11 +40,11 @@ export default component$(() => {
     return (
         <Form action={ action } class="login-form mt-5">
             <div class="relative">
-                <input name="email" type="text" placeholder="Email address" />
+                <input name="email" type="text" placeholder="jose@gmail.com" />
                 <label for="email">Email Address</label>
             </div>
             <div class="relative">
-                <input name="password" type="password" placeholder="Password" />
+                <input name="password" type="password" placeholder="123456" />
                 <label for="password">Password</label>
             </div>
             <div class="relative">
